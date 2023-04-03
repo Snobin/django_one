@@ -113,7 +113,8 @@
             <div class = "banner-sub-content">
                 {%for dest in dests%}
                 <div class = "hot-topic">
-                    <img src = " {{dest.img}} " alt = "">
+                    <img src="{% static dest.img %}" alt="">
+
 
                     <div class = "hot-topic-content">
                         <h2>{{dest.desc}}</h2>
